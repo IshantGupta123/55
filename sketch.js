@@ -33,15 +33,15 @@ function draw() {
 edges=createEdgeSprites();
 box.bounceOff(edges);
 
-   music.play();
+
     //add condition to check if box touching surface and make it box
 if(block1.isTouching(box)&&box.bounceOff(block1)){
     box.shapeColor="blue";
- 
+    music.play();
 }
 if(block2.isTouching(box)&&box.bounceOff(block2)){
     box.shapeColor="red"
-   
+      music.play();
 }
 if(block3.isTouching(box)&&box.bounceOff(block3)){
     box.shapeColor="green"
@@ -51,7 +51,7 @@ if(block3.isTouching(box)&&box.bounceOff(block3)){
 }
 if(block4.isTouching(box)&&box.bounceOff(block4)){
     box.shapeColor="pink"
-
+   music.play();
 }
 
 
